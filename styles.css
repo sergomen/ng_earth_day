@@ -1,0 +1,1383 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #020f05, #083010, #166d27, #021b02);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo h3 {
+    color: #dbe0d7;
+}
+
+.logo h3 span {
+    color: #68c556;
+}
+
+.logo img {
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    left: 0%;
+    top: 0%;
+}
+
+.date_text {
+    position: absolute;
+    left: 44%;
+    top: 35%;
+
+    color: #65bdf8;
+    font-family: "Mochiy Pop One";
+    font-weight: 400;
+    font-size: 1.8em;
+}
+
+.celebration_text {
+    position: absolute;
+    left: 31%;
+    top: 39%;
+
+    color: #9cc5e0;
+    font-family: "Mochiy Pop One";
+    font-weight: 400;
+    font-size: 8em;
+}
+
+.nature_part {
+    position: absolute;
+    margin: 0 0 0 0;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* .circle {
+    position: absolute;
+    left: 660px;
+    top: 154px;
+    
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+} */
+
+/* Top */
+.fur_seal {
+    height: 45px;
+    width: 35px;
+
+    left: 61%;
+    top: 35%;
+
+    background-image: url("./images/fur_seal.svg");
+    animation: colorChange 5s infinite;
+}
+
+.crane {
+    height: 80px;
+    width: 90px;
+    
+    left: 57%;
+    top: 25%;
+
+    background-image: url("./images/crane.svg");
+    animation: colorChange 4s infinite;
+}
+
+.cheetah {
+    height: 40px;
+    width: 50px;
+
+    left: 57%;
+    top: 32%;
+
+    background-image: url("./images/cheetah.svg");
+    animation: colorChange 12s infinite;
+}
+
+.falcon {
+    height: 64px;
+    width: 74px;
+
+    left: 52%;
+    top: 20%;
+
+    background-image: url("./images/falcon.svg");
+    animation: colorChange 8s infinite;
+}
+
+.branch {
+    height: 30px;
+    width: 30px;
+
+    left: 54%;
+    top: 28%;
+
+    background-image: url("./images/branch.svg");
+    animation: colorChange 6s infinite;
+}
+
+.bug {
+    height: 30px;
+    width: 30px;
+
+    left: 51%;
+    top: 25%;
+
+    background-image: url("./images/bug.svg");
+    animation: colorChange 7s infinite;
+}
+
+.bird2 {
+    height: 80px;
+    width: 90px;
+
+    left: 47%;
+    top: 18%;
+
+    background-image: url("./images/bird2.svg");
+    animation: colorChange 7s infinite;
+}
+
+.wolf {
+    height: 50px;
+    width: 50px;
+
+    left: 44%;
+    top: 26%;
+
+    background-image: url("./images/wolf.svg");
+    animation: colorChange 10s infinite;
+}
+
+.bird3 {
+    height: 50px;
+    width: 60px;
+
+    left: 43%;
+    top: 21%;
+
+    background-image: url("./images/bird3.svg");
+    animation: colorChange6s infinite;
+}
+
+.fish {
+    height: 50px;
+    width: 60px;
+
+    left: 39%;
+    top: 26%;
+
+    background-image: url("./images/fish.svg");
+    animation: colorChange 11s infinite;
+}
+
+.squid {
+    height: 80px;
+    width: 90px;
+
+    left: 40%;
+    top: 33%;
+
+    background-image: url("./images/squid.svg");
+    animation: colorChange 8s infinite;
+}
+
+.parrot {
+    height: 50px;
+    width: 50px;
+
+    left: 37%;
+    top: 33%;
+
+    background-image: url("./images/parrot.svg");
+    animation: colorChange 3s infinite;
+}
+
+/* Bottom */
+
+.butterfly {
+    height: 50px;
+    width: 50px;
+
+    left: 61%;
+    top: 61%;
+
+    background-image: url("./images/butterfly.svg");
+    animation: colorChange 5s infinite;
+}
+
+.whale {
+    height: 80px;
+    width: 100px;
+
+    left: 57%;
+    top: 66%;
+
+    background-image: url("./images/whale.svg");
+    animation: colorChange 15s infinite;
+}
+
+.penguin {
+    height: 60px;
+    width: 60px;
+
+    left: 57%;
+    top: 63%;
+
+    background-image: url("./images/penguin.svg");
+    animation: colorChange 6s infinite;
+}
+
+.nightingale {
+    height: 50px;
+    width: 60px;
+
+    left: 53%;
+    top: 63%;
+
+    background-image: url("./images/nightingale.svg");
+    animation: colorChange 10s infinite;
+}
+
+.lion {
+    height: 90px;
+    width: 100px;
+
+    left: 49%;
+    top: 68.5%;
+
+    background-image: url("./images/lion.svg");
+    animation: colorChange 9s infinite;
+}
+
+.lizard1 {
+    height: 90px;
+    width: 110px;
+
+    left: 49%;
+    top: 77%;
+
+    background-image: url("./images/lizard1.svg");
+    animation: colorChange 8s infinite;
+}
+
+.lizard2 {
+    height: 60px;
+    width: 90px;
+
+    left: 47%;
+    top: 62%;
+
+    background-image: url("./images/lizard2.svg");
+    animation: colorChange 6s infinite;
+}
+
+.leave {
+    height: 40px;
+    width: 50px;
+
+    left: 45%;
+    top: 69%;
+
+    background-image: url("./images/leave.svg");
+    animation: colorChange 4s infinite;
+}
+
+.rabbit {
+    height: 70px;
+    width: 80px;
+
+    left: 43%;
+    top: 75%;
+
+    background-image: url("./images/rabbit.svg");
+    animation: colorChange 7s infinite;
+}
+
+.turtle {
+    height: 64px;
+    width: 74px;
+
+    left: 41%;
+    top: 62%;
+
+    background-image: url("./images/turtle.svg");
+    animation: colorChange 10s infinite;
+}
+
+.leave2 {
+    height: 40px;
+    width: 50px;
+
+    left: 40%;
+    top: 70%;
+
+    background-image: url("./images/leave2.svg");
+    animation: colorChange 8s infinite;
+}
+
+.rodent {
+    height: 60px;
+    width: 70px;
+
+    left: 37.5%;
+    top: 62%;
+
+    background-image: url("./images/rodent.svg");
+    animation: colorChange 12s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        filter: hue-rotate(60deg);
+    }
+    100% {
+        filter: hue-rotate(-120deg);
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .date_text {
+        position: absolute;
+        left: 44%;
+        top: 35%;
+    
+        color: #65bdf8;
+        font-family: "Mochiy Pop One";
+        font-weight: 400;
+        font-size: 1.3em;
+    }
+    
+    .celebration_text {
+        position: absolute;
+        left: 31%;
+        top: 39%;
+    
+        color: #9cc5e0;
+        font-family: "Mochiy Pop One";
+        font-weight: 400;
+        font-size: 6em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .date_text {
+        position: absolute;
+        left: 44%;
+        top: 36%;
+    
+        color: #65bdf8;
+        font-family: "Mochiy Pop One";
+        font-weight: 400;
+        font-size: 1.3em;
+    }
+    
+    .celebration_text {
+        position: absolute;
+        left: 32%;
+        top: 40%;
+    
+        color: #9cc5e0;
+        font-family: "Mochiy Pop One";
+        font-weight: 400;
+        font-size: 5em;
+    }
+    
+    .nature_part {
+        position: absolute;
+        margin: 10 10 10 10;
+    
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    /* .circle {
+        position: absolute;
+        left: 360px;
+        top: 140px;
+        
+        height: 500px;
+        width: 500px;
+        background: rgb(25, 135, 172);
+        border-radius: 50%;
+    } */
+    
+    /* Top */
+    .fur_seal {
+        height: 45px;
+        width: 35px;
+    
+        left: 67%;
+        top: 35%;
+    
+        background-image: url("./images/fur_seal.svg");
+        animation: colorChange 5s infinite;
+    }
+    
+    .crane {
+        height: 80px;
+        width: 90px;
+        
+        left: 61%;
+        top: 25%;
+    
+        background-image: url("./images/crane.svg");
+        animation: colorChange 4s infinite;
+    }
+    
+    .cheetah {
+        height: 40px;
+        width: 50px;
+    
+        left: 60%;
+        top: 32%;
+    
+        background-image: url("./images/cheetah.svg");
+        animation: colorChange 12s infinite;
+    }
+    
+    .falcon {
+        height: 64px;
+        width: 74px;
+    
+        left: 57%;
+        top: 20%;
+    
+        background-image: url("./images/falcon.svg");
+        animation: colorChange 8s infinite;
+    }
+    
+    .branch {
+        height: 30px;
+        width: 30px;
+    
+        left: 54%;
+        top: 29%;
+    
+        background-image: url("./images/branch.svg");
+        animation: colorChange 6s infinite;
+    }
+    
+    .bug {
+        height: 30px;
+        width: 30px;
+    
+        left: 55%;
+        top: 23%;
+    
+        background-image: url("./images/bug.svg");
+        animation: colorChange 7s infinite;
+    }
+    
+    .bird2 {
+        height: 80px;
+        width: 90px;
+    
+        left: 48%;
+        top: 17%;
+    
+        background-image: url("./images/bird2.svg");
+        animation: colorChange 7s infinite;
+    }
+    
+    .wolf {
+        height: 50px;
+        width: 50px;
+    
+        left: 45%;
+        top: 26%;
+    
+        background-image: url("./images/wolf.svg");
+        animation: colorChange 10s infinite;
+    }
+    
+    .bird3 {
+        height: 50px;
+        width: 60px;
+    
+        left: 42%;
+        top: 20%;
+    
+        background-image: url("./images/bird3.svg");
+        animation: colorChange6s infinite;
+    }
+    
+    .fish {
+        height: 50px;
+        width: 60px;
+    
+        left: 36%;
+        top: 26%;
+    
+        background-image: url("./images/fish.svg");
+        animation: colorChange 11s infinite;
+    }
+    
+    .squid {
+        height: 80px;
+        width: 90px;
+    
+        left: 38%;
+        top: 33%;
+    
+        background-image: url("./images/squid.svg");
+        animation: colorChange 8s infinite;
+    }
+    
+    .parrot {
+        height: 50px;
+        width: 50px;
+    
+        left: 33%;
+        top: 33%;
+    
+        background-image: url("./images/parrot.svg");
+        animation: colorChange 3s infinite;
+    }
+    
+    /* Bottom */
+    
+    .butterfly {
+        height: 50px;
+        width: 50px;
+    
+        left: 65%;
+        top: 56%;
+    
+        background-image: url("./images/butterfly.svg");
+        animation: colorChange 5s infinite;
+    }
+    
+    .whale {
+        height: 80px;
+        width: 100px;
+    
+        left: 59%;
+        top: 65%;
+    
+        background-image: url("./images/whale.svg");
+        animation: colorChange 15s infinite;
+    }
+    
+    .penguin {
+        height: 60px;
+        width: 60px;
+    
+        left: 59%;
+        top: 61%;
+    
+        background-image: url("./images/penguin.svg");
+        animation: colorChange 6s infinite;
+    }
+    
+    .nightingale {
+        height: 50px;
+        width: 60px;
+    
+        left: 54%;
+        top: 57%;
+    
+        background-image: url("./images/nightingale.svg");
+        animation: colorChange 10s infinite;
+    }
+    
+    .lion {
+        height: 90px;
+        width: 100px;
+    
+        left: 48%;
+        top: 65%;
+    
+        background-image: url("./images/lion.svg");
+        animation: colorChange 9s infinite;
+    }
+    
+    .lizard1 {
+        height: 90px;
+        width: 110px;
+    
+        left: 47%;
+        top: 74%;
+    
+        background-image: url("./images/lizard1.svg");
+        animation: colorChange 8s infinite;
+    }
+    
+    .lizard2 {
+        height: 60px;
+        width: 90px;
+    
+        left: 46%;
+        top: 56%;
+    
+        background-image: url("./images/lizard2.svg");
+        animation: colorChange 6s infinite;
+    }
+    
+    .leave {
+        height: 40px;
+        width: 50px;
+    
+        left: 42%;
+        top: 65%;
+    
+        background-image: url("./images/leave.svg");
+        animation: colorChange 4s infinite;
+    }
+    
+    .rabbit {
+        height: 70px;
+        width: 80px;
+    
+        left: 38%;
+        top: 72%;
+    
+        background-image: url("./images/rabbit.svg");
+        animation: colorChange 7s infinite;
+    }
+    
+    .turtle {
+        height: 70px;
+        width: 80px;
+    
+        left: 38%;
+        top: 56%;
+    
+        background-image: url("./images/turtle.svg");
+        animation: colorChange 10s infinite;
+    }
+    
+    .leave2 {
+        height: 40px;
+        width: 50px;
+    
+        left: 35%;
+        top: 65%;
+    
+        background-image: url("./images/leave2.svg");
+        animation: colorChange 8s infinite;
+    }
+    
+    .rodent {
+        height: 60px;
+        width: 70px;
+    
+        left: 32%;
+        top: 56%;
+    
+        background-image: url("./images/rodent.svg");
+        animation: colorChange 12s infinite;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .date_text {
+        position: absolute;
+        left: 38%;
+        top: 40%;
+    
+        color: #65bdf8;
+        font-family: "Mochiy Pop One";
+        font-weight: 400;
+        font-size: 1.6em;
+    }
+    
+    .celebration_text {
+        position: absolute;
+        left: 30%;
+        top: 46%;
+    
+        color: #9cc5e0;
+        font-family: "Mochiy Pop One";
+        font-weight: 400;
+        font-size: 4em;
+    }
+    
+    .nature_part {
+        position: absolute;
+        margin: 10 10 10 10;
+    
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    /* .circle {
+        position: absolute;
+        left: 120px;
+        top: 300px;
+        
+        height: 600px;
+        width: 600px;
+        background: rgb(25, 135, 172);
+        border-radius: 50%;
+    } */
+
+    /* Top */
+    .fur_seal {
+        height: 50px;
+        width: 40px;
+    
+        left: 80%;
+        top: 44%;
+    
+        background-image: url("./images/fur_seal.svg");
+        animation: colorChange 5s infinite;
+    }
+    
+    .crane {
+        height: 90px;
+        width: 100px;
+        
+        left: 70%;
+        top: 34%;
+    
+        background-image: url("./images/crane.svg");
+        animation: colorChange 4s infinite;
+    }
+    
+    .cheetah {
+        height: 50px;
+        width: 60px;
+    
+        left: 70%;
+        top: 42%;
+    
+        background-image: url("./images/cheetah.svg");
+        animation: colorChange 12s infinite;
+    }
+    
+    .falcon {
+        height: 90px;
+        width: 100px;
+    
+        left: 58%;
+        top: 28%;
+    
+        background-image: url("./images/falcon.svg");
+        animation: colorChange 8s infinite;
+    }
+    
+    .branch {
+        height: 40px;
+        width: 40px;
+    
+        left: 62%;
+        top: 34%;
+    
+        background-image: url("./images/branch.svg");
+        animation: colorChange 6s infinite;
+    }
+    
+    .bug {
+        height: 40px;
+        width: 40px;
+    
+        left: 56%;
+        top: 30%;
+    
+        background-image: url("./images/bug.svg");
+        animation: colorChange 7s infinite;
+    }
+    
+    .bird2 {
+        height: 100px;
+        width: 110px;
+    
+        left: 46%;
+        top: 26%;
+    
+        background-image: url("./images/bird2.svg");
+        animation: colorChange 7s infinite;
+    }
+    
+    .wolf {
+        height: 60px;
+        width: 60px;
+    
+        left: 38%;
+        top: 32%;
+    
+        background-image: url("./images/wolf.svg");
+        animation: colorChange 10s infinite;
+    }
+    
+    .bird3 {
+        height: 60px;
+        width: 70px;
+    
+        left: 32%;
+        top: 28%;
+    
+        background-image: url("./images/bird3.svg");
+        animation: colorChange6s infinite;
+    }
+    
+    .fish {
+        height: 60px;
+        width: 70px;
+    
+        left: 22%;
+        top: 34%;
+    
+        background-image: url("./images/fish.svg");
+        animation: colorChange 11s infinite;
+    }
+    
+    .squid {
+        height: 90px;
+        width: 100px;
+    
+        left: 24%;
+        top: 40%;
+    
+        background-image: url("./images/squid.svg");
+        animation: colorChange 8s infinite;
+    }
+    
+    .parrot {
+        height: 60px;
+        width: 60px;
+    
+        left: 16%;
+        top: 42%;
+    
+        background-image: url("./images/parrot.svg");
+        animation: colorChange 3s infinite;
+    }
+    
+    /* Bottom */
+    
+    .butterfly {
+        height: 60px;
+        width: 60px;
+    
+        left: 76%;
+        top: 58%;
+    
+        background-image: url("./images/butterfly.svg");
+        animation: colorChange 5s infinite;
+    }
+    
+    .whale {
+        height: 80px;
+        width: 100px;
+    
+        left: 66%;
+        top: 65%;
+    
+        background-image: url("./images/whale.svg");
+        animation: colorChange 15s infinite;
+    }
+    
+    .penguin {
+        height: 70px;
+        width: 70px;
+    
+        left: 67%;
+        top: 61%;
+    
+        background-image: url("./images/penguin.svg");
+        animation: colorChange 6s infinite;
+    }
+    
+    .nightingale {
+        height: 60px;
+        width: 70px;
+    
+        left: 58%;
+        top: 58%;
+    
+        background-image: url("./images/nightingale.svg");
+        animation: colorChange 10s infinite;
+    }
+    
+    .lion {
+        height: 100px;
+        width: 110px;
+    
+        left: 48%;
+        top: 66%;
+    
+        background-image: url("./images/lion.svg");
+        animation: colorChange 9s infinite;
+    }
+    
+    .lizard1 {
+        height: 100px;
+        width: 120px;
+    
+        left: 48%;
+        top: 72%;
+    
+        background-image: url("./images/lizard1.svg");
+        animation: colorChange 8s infinite;
+    }
+    
+    .lizard2 {
+        height: 70px;
+        width: 100px;
+    
+        left: 40%;
+        top: 58%;
+    
+        background-image: url("./images/lizard2.svg");
+        animation: colorChange 6s infinite;
+    }
+    
+    .leave {
+        height: 50px;
+        width: 60px;
+    
+        left: 40%;
+        top: 64%;
+    
+        background-image: url("./images/leave.svg");
+        animation: colorChange 4s infinite;
+    }
+    
+    .rabbit {
+        height: 80px;
+        width: 90px;
+    
+        left: 32%;
+        top: 70%;
+    
+        background-image: url("./images/rabbit.svg");
+        animation: colorChange 7s infinite;
+    }
+    
+    .turtle {
+        height: 80px;
+        width: 90px;
+    
+        left: 29%;
+        top: 58%;
+    
+        background-image: url("./images/turtle.svg");
+        animation: colorChange 10s infinite;
+    }
+    
+    .leave2 {
+        height: 50px;
+        width: 60px;
+    
+        left: 26%;
+        top: 64%;
+    
+        background-image: url("./images/leave2.svg");
+        animation: colorChange 8s infinite;
+    }
+    
+    .rodent {
+        height: 70px;
+        width: 80px;
+    
+        left: 20%;
+        top: 58%;
+    
+        background-image: url("./images/rodent.svg");
+        animation: colorChange 12s infinite;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .date_text {
+        position: absolute;
+        left: 40%;
+        top: 46%;
+    
+        color: #65bdf8;
+        font-family: "Mochiy Pop One";
+        font-weight: 400;
+        font-size: 1em;
+    }
+    
+    .celebration_text {
+        position: absolute;
+        left: 28%;
+        top: 48%;
+    
+        color: #9cc5e0;
+        font-family: "Mochiy Pop One";
+        font-weight: 400;
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .date_text {
+        position: absolute;
+        left: 35%;
+        top: 42%;
+    
+        color: #65bdf8;
+        font-family: "Mochiy Pop One";
+        font-weight: 400;
+        font-size: 1.0em;
+    }
+    
+    .celebration_text {
+        position: absolute;
+        left: 10%;
+        top: 45%;
+    
+        color: #9cc5e0;
+        font-family: "Mochiy Pop One";
+        font-weight: 600;
+        font-size: 3.88em;
+    }
+    
+    .nature_part {
+        position: absolute;
+        margin: 10 10 10 10;
+    
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    /* .circle {
+        position: absolute;
+        left: 18px;
+        top: 260px;
+        
+        height: 400px;
+        width: 400px;
+        background: rgb(25, 135, 172);
+        border-radius: 50%;
+    } */
+
+    /* Top */
+    .fur_seal {
+        height: 35px;
+        width: 25px;
+    
+        left: 86%;
+        top: 42%;
+    
+        background-image: url("./images/fur_seal.svg");
+        animation: colorChange 5s infinite;
+    }
+    
+    .crane {
+        height: 70px;
+        width: 80px;
+        
+        left: 72%;
+        top: 33%;
+    
+        background-image: url("./images/crane.svg");
+        animation: colorChange 4s infinite;
+    }
+    
+    .cheetah {
+        height: 30px;
+        width: 40px;
+    
+        left: 72%;
+        top: 38%;
+    
+        background-image: url("./images/cheetah.svg");
+        animation: colorChange 12s infinite;
+    }
+    
+    .falcon {
+        height: 54px;
+        width: 64px;
+    
+        left: 61%;
+        top: 29%;
+    
+        background-image: url("./images/falcon.svg");
+        animation: colorChange 8s infinite;
+    }
+    
+    .branch {
+        height: 30px;
+        width: 30px;
+    
+        left: 64%;
+        top: 34%;
+    
+        background-image: url("./images/branch.svg");
+        animation: colorChange 6s infinite;
+    }
+    
+    .bug {
+        height: 30px;
+        width: 30px;
+    
+        left: 55%;
+        top: 32%;
+    
+        background-image: url("./images/bug.svg");
+        animation: colorChange 7s infinite;
+    }
+    
+    .bird2 {
+        height: 70px;
+        width: 80px;
+    
+        left: 42%;
+        top: 28%;
+    
+        background-image: url("./images/bird2.svg");
+        animation: colorChange 7s infinite;
+    }
+    
+    .wolf {
+        height: 40px;
+        width: 40px;
+    
+        left: 35%;
+        top: 34%;
+    
+        background-image: url("./images/wolf.svg");
+        animation: colorChange 10s infinite;
+    }
+    
+    .bird3 {
+        height: 40px;
+        width: 50px;
+    
+        left: 30%;
+        top: 29%;
+    
+        background-image: url("./images/bird3.svg");
+        animation: colorChange6s infinite;
+    }
+    
+    .fish {
+        height: 40px;
+        width: 50px;
+    
+        left: 16%;
+        top: 34%;
+    
+        background-image: url("./images/fish.svg");
+        animation: colorChange 11s infinite;
+    }
+    
+    .squid {
+        height: 70px;
+        width: 80px;
+    
+        left: 20%;
+        top: 38%;
+    
+        background-image: url("./images/squid.svg");
+        animation: colorChange 8s infinite;
+    }
+    
+    .parrot {
+        height: 40px;
+        width: 40px;
+    
+        left: 10%;
+        top: 40%;
+    
+        background-image: url("./images/parrot.svg");
+        animation: colorChange 3s infinite;
+    }
+    
+    /* Bottom */
+    
+    .butterfly {
+        height: 40px;
+        width: 40px;
+    
+        left: 84%;
+        top: 55%;
+    
+        background-image: url("./images/butterfly.svg");
+        animation: colorChange 5s infinite;
+    }
+    
+    .whale {
+        height: 70px;
+        width: 90px;
+    
+        left: 68%;
+        top: 60%;
+    
+        background-image: url("./images/whale.svg");
+        animation: colorChange 15s infinite;
+    }
+    
+    .penguin {
+        height: 50px;
+        width: 50px;
+    
+        left: 71%;
+        top: 56%;
+    
+        background-image: url("./images/penguin.svg");
+        animation: colorChange 6s infinite;
+    }
+    
+    .nightingale {
+        height: 40px;
+        width: 50px;
+    
+        left: 58%;
+        top: 55%;
+    
+        background-image: url("./images/nightingale.svg");
+        animation: colorChange 10s infinite;
+    }
+    
+    .lion {
+        height: 80px;
+        width: 90px;
+    
+        left: 44%;
+        top: 60%;
+    
+        background-image: url("./images/lion.svg");
+        animation: colorChange 9s infinite;
+    }
+    
+    .lizard1 {
+        height: 80px;
+        width: 100px;
+    
+        left: 38%;
+        top: 67%;
+    
+        background-image: url("./images/lizard1.svg");
+        animation: colorChange 8s infinite;
+    }
+    
+    .lizard2 {
+        height: 50px;
+        width: 80px;
+    
+        left: 38%;
+        top: 55%;
+    
+        background-image: url("./images/lizard2.svg");
+        animation: colorChange 6s infinite;
+    }
+    
+    .leave {
+        height: 30px;
+        width: 40px;
+    
+        left: 33%;
+        top: 60.5%;
+    
+        background-image: url("./images/leave.svg");
+        animation: colorChange 4s infinite;
+    }
+    
+    .rabbit {
+        height: 60px;
+        width: 70px;
+    
+        left: 20%;
+        top: 64%;
+    
+        background-image: url("./images/rabbit.svg");
+        animation: colorChange 7s infinite;
+    }
+    
+    .turtle {
+        height: 50px;
+        width: 60px;
+    
+        left: 24%;
+        top: 55%;
+    
+        background-image: url("./images/turtle.svg");
+        animation: colorChange 10s infinite;
+    }
+    
+    .leave2 {
+        height: 30px;
+        width: 40px;
+    
+        left: 16%;
+        top: 60%;
+    
+        background-image: url("./images/leave2.svg");
+        animation: colorChange 8s infinite;
+    }
+    
+    .rodent {
+        height: 50px;
+        width: 60px;
+    
+        left: 10%;
+        top: 55%;
+    
+        background-image: url("./images/rodent.svg");
+        animation: colorChange 12s infinite;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .date_text {
+        position: absolute;
+        left: 35%;
+        top: 42%;
+    
+        color: #65bdf8;
+        font-family: "Mochiy Pop One";
+        font-weight: 400;
+        font-size: 1.0em;
+    }
+    
+    .celebration_text {
+        position: absolute;
+        left: 18%;
+        top: 46%;
+    
+        color: #9cc5e0;
+        font-family: "Mochiy Pop One";
+        font-weight: 600;
+        font-size: 3em;
+    }
+}
